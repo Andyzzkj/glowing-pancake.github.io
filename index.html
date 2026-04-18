@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 { font-size: 3em; }
+        .card {
+            background: rgba(255,255,255,0.2);
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎉 欢迎访问！</h1>
+        <p>这是我做的第一个网页</p>
+        <p>访问量：<span id="count">0</span></p>
+    </div>
+    <script>
+        document.getElementById('count').innerText = Math.floor(Math.random() * 1000);
+    </script>
+</body>
+</html>
